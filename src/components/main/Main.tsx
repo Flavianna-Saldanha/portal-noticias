@@ -1,7 +1,7 @@
 export const Main = () => {
   return (
     <>
-      <main className="grid container mt-10">
+      <main className="grid container">
         <section id="featured" className="grid grid-flow-col gap-4">
           <figure className="card">
             <img src="../assets/images/Image 01.png" alt="" />
@@ -220,7 +220,7 @@ export const Main = () => {
           </div>
         </section>
 
-        <div>
+        <aside>
           <div id="ads">
             <img src="../assets/Ads.png" alt="" />
           </div>
@@ -241,7 +241,7 @@ export const Main = () => {
                 </div>
                 <div>
                   <span className="content-tag">Software</span>
-                  <h3 className="text-xl line-clamp-3">
+                  <h3 className="text-xl line-clamp-2">
                     Aplicativo de monitoramento ambiental ganha destaque,
                     incentivando práticas ecológicas e promovendo a
                     conscientização.
@@ -254,7 +254,7 @@ export const Main = () => {
                 </div>
                 <div>
                   <span className="content-tag">Realidade Virtual</span>
-                  <h3 className="text-xl line-clamp-3">
+                  <h3 className="text-xl line-clamp-2">
                     Óculos de realidade virtual com feedback tátil proporcionam
                     uma experiência sensorial completa, imergindo usuários em
                     ambientes digitais.
@@ -267,7 +267,7 @@ export const Main = () => {
                 </div>
                 <div>
                   <span className="content-tag">Criptomoedas</span>
-                  <h3 className="text-xl line-clamp-3">
+                  <h3 className="text-xl line-clamp-2">
                     Surge uma nova moeda digital baseada em tecnologias
                     sustentáveis, buscando minimizar o impacto ambiental
                     associado à mineração de criptomoedas.
@@ -280,7 +280,7 @@ export const Main = () => {
                 </div>
                 <div>
                   <span className="content-tag">Drones</span>
-                  <h3 className="text-xl line-clamp-3">
+                  <h3 className="text-xl line-clamp-2">
                     Empresas de e-commerce implementam frota de drones para
                     entregas rápidas, transformando o cenário do comércio
                     online.
@@ -293,7 +293,7 @@ export const Main = () => {
                 </div>
                 <div>
                   <span className="content-tag">Impressão 3d</span>
-                  <h3 className="text-xl line-clamp-3">
+                  <h3 className="text-xl line-clamp-2">
                     Tecnologia inovadora permite a impressão 3D de órgãos
                     humanos, revolucionando a medicina e a lista de espera por
                     transplantes.
@@ -302,7 +302,7 @@ export const Main = () => {
               </article>
             </div>
           </section>
-        </div>
+        </aside>
       </main>
     </>
   );
