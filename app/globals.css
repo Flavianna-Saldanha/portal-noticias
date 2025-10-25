@@ -45,6 +45,10 @@ h3 {
   font: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
 #primary {
   padding-block: 20px;
 
@@ -68,4 +72,12 @@ h3 {
   border: solid 1px var(--stroke-color);
   border-inline: none;
   justify-content: space-between;
+}
+
+#featured {
+  img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
 }
