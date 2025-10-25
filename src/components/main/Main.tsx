@@ -3,9 +3,17 @@ export const Main = () => {
     <>
       <main className="grid container mt-10">
         <section id="featured" className="grid grid-flow-col gap-4">
-          <div>
+          <figure className="card">
             <img src="../assets/images/Image 01.png" alt="" />
-          </div>
+
+            <figcaption>
+              <span className="content-tag">Robótica</span>
+              <h2 className="text-xl">
+                Robôs domésticos começam a ser adotados para tarefas diárias,
+                prometendo mais conforto e eficiência nas residências.
+              </h2>
+            </figcaption>
+          </figure>
 
           <div className="grid grid-cols-2 gap-4">
             <div>
