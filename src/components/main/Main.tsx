@@ -72,7 +72,7 @@ export const Main = () => {
             </a>
           </header>
 
-          <div className="grid gap-4">
+          <div className="grid gap-4 place-content-center">
             <figure>
               <span className="content-tag">Veículos</span>
               <img src="../assets/images/Image 06.png" alt="" />
