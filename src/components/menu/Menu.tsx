@@ -6,7 +6,6 @@ export const Menu = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   const toggleMenu = () => setOpenMenu(!openMenu);
-  const closeMenu = () => setOpenMenu(false);
 
   return (
     <header className="container mx-auto">
@@ -48,16 +47,16 @@ export const Menu = () => {
           xl:static xl:flex xl:flex-row xl:bg-transparent xl:opacity-100 xl:h-auto xl:justify-center xl:text-white
         `}
       >
-        <a href="#featured" onClick={closeMenu}>
+        <a href="#featured" onClick={toggleMenu}>
           Inteligência Artificial
         </a>
-        <a href="#weekly" onClick={closeMenu}>
+        <a href="#weekly" onClick={toggleMenu}>
           Mais lidas da semana
         </a>
-        <a href="#ai" onClick={closeMenu}>
+        <a href="#ai" onClick={toggleMenu}>
           Destaques da Inteligência Artificial
         </a>
-        <a href="#more" onClick={closeMenu}>
+        <a href="#more" onClick={toggleMenu}>
           Viu isso aqui?
         </a>
       </nav>
