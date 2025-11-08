@@ -30,6 +30,10 @@ body {
   background-color: var(--bg-color);
 }
 
+header {
+  margin-block: 20px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
