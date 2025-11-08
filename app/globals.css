@@ -45,200 +45,202 @@ h3 {
   font: inherit;
 }
 
-main {
-  margin-block: 40px;
-  row-gap: 80px;
-  column-gap: 32px;
+@media (min-width: 1280px) {
+  main {
+    margin-block: 40px;
+    row-gap: 80px;
+    column-gap: 32px;
 
-  grid-template-columns: 2fr 1.4fr;
+    grid-template-columns: 2fr 1.4fr;
 
-  grid-template-areas:
-    "featured featured"
-    "weekly weekly"
-    "ai aside";
-}
-
-img {
-  max-width: 100%;
-}
-
-.text-2xl {
-  font: var(--h1);
-}
-
-.text-xl {
-  font: var(--h2);
-}
-
-.text-lg {
-  font: var(--h3);
-}
-
-.text-sm {
-  font: var(--text-sm);
-}
-
-figcaption {
-  position: absolute;
-  bottom: 0;
-  padding: 24px;
-
-  &:has(.text-lg) {
-    padding: 12px;
+    grid-template-areas:
+      "featured featured"
+      "weekly weekly"
+      "ai aside";
   }
-
-  h2 {
-    margin-top: 8px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
-.content-tag {
-  display: inline-block;
-  background-color: var(--brand-color-dark);
-  padding: 4px 8px;
-  border-radius: 4px;
-  font: 500 10px/1.2 var(--font-family);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--text-color-primary);
-  box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.251);
-}
-
-#primary {
-  padding-block: 20px;
-
-  div {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  div:nth-child(2) {
-    margin-inline: auto;
-  }
-
-  div:nth-child(3) {
-    justify-self: end;
-  }
-}
-
-#secondary {
-  padding-block: 14px;
-  border: solid 1px var(--stroke-color);
-  border-inline: none;
-  justify-content: space-between;
-}
-
-section header {
-  border-top: 1px solid var(--stroke-color);
-  padding-block: 12px 24px;
-  font: var(--text-span);
-
-  a {
-    justify-self: end;
-    align-items: center;
-    gap: 8px;
-
-    span {
-      background-image: url(../public/assets/icons/ArrowRight.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 16px;
-      height: 16px;
-    }
-
-    &:hover span {
-      background-image: url(../public/assets/icons/ArrowRight-hover.svg);
-    }
-  }
-}
-
-#featured {
-  grid-area: featured;
 
   img {
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
   }
-}
 
-.card {
-  position: relative;
-  border-radius: 4px;
-  overflow: hidden;
+  .text-2xl {
+    font: var(--h1);
+  }
 
-  &::before {
-    content: "";
+  .text-xl {
+    font: var(--h2);
+  }
+
+  .text-lg {
+    font: var(--h3);
+  }
+
+  .text-sm {
+    font: var(--text-sm);
+  }
+
+  figcaption {
     position: absolute;
-    inset: 0;
-    top: 50%;
-    background: linear-gradient(180deg, transparent 0%, #020617 100%);
-  }
-}
+    bottom: 0;
+    padding: 24px;
 
-#weekly {
-  grid-area: weekly;
-
-  & > div {
-    grid-template-columns: repeat(4, 292px);
-  }
-
-  img {
-    height: 160px;
-  }
-
-  figure {
-    position: relative;
-
-    .content-tag {
-      position: absolute;
-      top: 8px;
-      left: 8px;
+    &:has(.text-lg) {
+      padding: 12px;
     }
 
-    p {
+    h2 {
       margin-top: 8px;
-      font-weight: 800;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
-}
 
-#ai {
-  grid-area: ai;
-
-  img {
-    width: 176px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+  .content-tag {
+    display: inline-block;
+    background-color: var(--brand-color-dark);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font: 500 10px/1.2 var(--font-family);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-color-primary);
+    box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.251);
   }
 
-  h3 {
-    margin-block: 8px 4px;
+  #primary {
+    padding-block: 20px;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    div:nth-child(2) {
+      margin-inline: auto;
+    }
+
+    div:nth-child(3) {
+      justify-self: end;
+    }
   }
-}
 
-aside {
-  grid-area: aside;
-}
-
-#more {
-  margin-top: 32px;
-
-  h3 {
-    margin-top: 8px;
+  #secondary {
+    padding-block: 14px;
+    border: solid 1px var(--stroke-color);
+    border-inline: none;
+    justify-content: space-between;
   }
 
-  img {
-    width: 72px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+  section header {
+    border-top: 1px solid var(--stroke-color);
+    padding-block: 12px 24px;
+    font: var(--text-span);
+
+    a {
+      justify-self: end;
+      align-items: center;
+      gap: 8px;
+
+      span {
+        background-image: url(../public/assets/icons/ArrowRight.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+      }
+
+      &:hover span {
+        background-image: url(../public/assets/icons/ArrowRight-hover.svg);
+      }
+    }
+  }
+
+  #featured {
+    grid-area: featured;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(180deg, transparent 0%, #020617 100%);
+    }
+  }
+
+  #weekly {
+    grid-area: weekly;
+
+    & > div {
+      grid-template-columns: repeat(4, 292px);
+    }
+
+    img {
+      height: 160px;
+    }
+
+    figure {
+      position: relative;
+
+      .content-tag {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+      }
+
+      p {
+        margin-top: 8px;
+        font-weight: 800;
+      }
+    }
+  }
+
+  #ai {
+    grid-area: ai;
+
+    img {
+      width: 176px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+
+    h3 {
+      margin-block: 8px 4px;
+    }
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  #more {
+    margin-top: 32px;
+
+    h3 {
+      margin-top: 8px;
+    }
+
+    img {
+      width: 72px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
   }
 }
