@@ -1,7 +1,7 @@
 export const Main = () => {
   return (
     <>
-      <main className="xl:grid xl:container">
+      <main className="lg:grid lg:container xl:grid xl:container">
         <section id="featured" className="xl:grid xl:grid-flow-col gap-4">
           <figure className="card">
             <img src="../assets/images/Image 01.png" alt="" />
