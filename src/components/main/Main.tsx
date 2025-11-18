@@ -66,8 +66,8 @@ export const Main = () => {
           </div>
         </section>
 
-        <section id="weekly">
-          <header className="xl:grid xl:grid-flow-col">
+        <section id="weekly" className="container w-11/12 lg:w-auto">
+          <header className="grid grid-flow-col">
             <h3>Mais lidas da semana</h3>
             <a href="#" className="xl:grid xl:grid-flow-col">
               <strong>Ver tudo</strong>
@@ -75,11 +75,11 @@ export const Main = () => {
             </a>
           </header>
 
-          <div className="xl:grid xl:gap-4 xl:place-content-center">
+          <div className="text-justify flex flex-wrap justify-center gap-5 xl:grid xl:place-content-center">
             <figure>
               <span className="content-tag">Veículos</span>
               <img src="../assets/images/Image 06.png" alt="" />
-              <p>
+              <p className="w-72">
                 Protótipo de veículo voador é apresentado, marcando o início da
                 era dos transportes aéreos pessoais.
               </p>
@@ -87,7 +87,7 @@ export const Main = () => {
             <figure className="xl:grid xl:gap-4">
               <span className="content-tag">Hologramas</span>
               <img src="../assets/images/Image 07.png" alt="" />
-              <p>
+              <p className="w-72">
                 Plataforma de videoconferência apresenta nova função de
                 hologramas, tornando as chamadas virtuais mais realistas e
                 envolventes.
@@ -96,7 +96,7 @@ export const Main = () => {
             <figure className="xl:grid xl:gap-4">
               <span className="content-tag">Realidade virtual</span>
               <img src="../assets/images/Image 08.png" alt="" />
-              <p>
+              <p className="w-72">
                 Nova geração de consoles de videogame é lançada, trazendo
                 gráficos ultra-realistas e experiências de jogo totalmente
                 envolventes.
@@ -105,7 +105,7 @@ export const Main = () => {
             <figure className="xl:grid xl:gap-4">
               <span className="content-tag">Internet</span>
               <img src="../assets/images/Image 09.png" alt="" />
-              <p>
+              <p className="w-72">
                 Projeto busca oferecer internet de alta velocidade em áreas
                 remotas através de satélites.
               </p>
