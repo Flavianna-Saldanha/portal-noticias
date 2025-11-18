@@ -75,7 +75,7 @@ export const Main = () => {
             </a>
           </header>
 
-          <div className="text-justify flex flex-wrap justify-center gap-5 xl:grid xl:place-content-center">
+          <div className="text-justify text-xs leading-6 flex flex-wrap justify-center gap-5 lg:text-sm xl:grid xl:place-content-center">
             <figure>
               <span className="content-tag">Veículos</span>
               <img src="../assets/images/Image 06.png" alt="" />
