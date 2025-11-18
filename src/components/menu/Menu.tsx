@@ -8,7 +8,7 @@ export const Menu = () => {
   const toggleMenu = () => setOpenMenu(!openMenu);
 
   return (
-    <header className="container mx-auto">
+    <header className="w-11/12 mx-auto z-10">
       <nav
         id="primary"
         className="flex items-center justify-between xl:grid xl:grid-flow-col"
@@ -26,7 +26,11 @@ export const Menu = () => {
         </button>
 
         <div>
-          <img src="../assets/Logo.png" alt="Portal de Notícias logo" />
+          <img
+            src="../assets/Logo.png"
+            alt="Portal de Notícias logo"
+            className="w-52 lg:w-auto"
+          />
         </div>
 
         <div>
@@ -42,8 +46,8 @@ export const Menu = () => {
         id="secondary"
         className={`
           ${openMenu ? "flex" : "hidden"}
-          absolute w-full h-full bg-white opacity-90 text-black 
-          flex-col items-center justify-center gap-8
+          absolute left-0 w-full h-full bg-white opacity-90 text-black 
+          flex-col items-center justify-center gap-8 
           xl:static xl:flex xl:flex-row xl:bg-transparent xl:opacity-100 xl:h-auto xl:justify-center xl:text-white
         `}
       >

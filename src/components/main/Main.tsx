@@ -1,8 +1,11 @@
 export const Main = () => {
   return (
     <>
-      <main className="lg:grid lg:container xl:grid xl:container">
-        <section id="featured" className="xl:grid xl:grid-flow-col gap-4">
+      <main className="place-items-center lg:grid lg:container">
+        <section
+          id="featured"
+          className="w-5/6 grid grid-cols-1 gap-4 sm:grid-cols-2"
+        >
           <figure className="card">
             <img src="../assets/images/Image 01.png" alt="" />
 
@@ -15,7 +18,7 @@ export const Main = () => {
             </figcaption>
           </figure>
 
-          <div className="xl:grid xl:grid-cols-2 xl:gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <figure className="card">
               <img src="../assets/images/Image 02.png" alt="" />
 
@@ -127,7 +130,7 @@ export const Main = () => {
                   Empresa surpreende o mundo ao anunciar um algoritmo capaz de
                   prever eventos futuros com alta precisão.
                 </h3>
-                <p className="text-sm line-clamp-3">
+                <p className="text-sm- line-clamp-3">
                   Em um avanço surpreendente da inteligência artificial, uma
                   empresa anuncia o desenvolvimento de um algoritmo capaz de
                   prever eventos futuros com notável precisão. Descubra como
@@ -147,7 +150,7 @@ export const Main = () => {
                   Dispositivo portátil promete traduzir instantaneamente
                   diferentes idiomas, facilitando a comunicação global.
                 </h3>
-                <p className="text-sm line-clamp-3">
+                <p className="text-sm- line-clamp-3">
                   Em um mundo cada vez mais conectado, a comunicação sem
                   fronteiras é essencial. Nesse contexto, um dispositivo
                   portátil surge como um verdadeiro herói linguístico,
@@ -173,7 +176,7 @@ export const Main = () => {
                   popularidade, oferecendo suporte emocional e físico aos
                   usuários.
                 </h3>
-                <p className="text-sm line-clamp-3">
+                <p className="text-sm-line-clamp-3">
                   A tecnologia não só avança, mas também busca tornar a vida
                   mais significativa para todas as gerações. No cenário atual,
                   os robôs sociais, projetados especialmente para oferecer apoio
@@ -198,7 +201,7 @@ export const Main = () => {
                   usuários a manterem o foco e aumentarem a produtividade no dia
                   a dia.
                 </h3>
-                <p className="text-sm line-clamp-3">
+                <p className="text-sm- line-clamp-3">
                   No turbilhão da vida moderna, onde distrações são abundantes,
                   um aplicativo inovador surge como um aliado indispensável para
                   quem busca maior concentração e eficiência no cotidiano.
