@@ -1,10 +1,10 @@
 export const Main = () => {
   return (
     <>
-      <main className="place-items-center lg:grid lg:container">
+      <main className="w-11/12 place-items-center lg:grid lg:container">
         <section
           id="featured"
-          className="w-5/6 grid grid-cols-1 gap-4 sm:grid-cols-2"
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2"
         >
           <figure className="card">
             <img src="../assets/images/Image 01.png" alt="" />
@@ -66,10 +66,10 @@ export const Main = () => {
           </div>
         </section>
 
-        <section id="weekly" className="container w-11/12 lg:w-auto">
+        <section id="weekly" className="container lg:w-auto">
           <header className="grid grid-flow-col">
             <h3>Mais lidas da semana</h3>
-            <a href="#" className="xl:grid xl:grid-flow-col">
+            <a href="#" className="grid grid-flow-col">
               <strong>Ver tudo</strong>
               <span></span>
             </a>
@@ -114,16 +114,16 @@ export const Main = () => {
         </section>
 
         <section id="ai">
-          <header className="xl:grid xl:grid-flow-col">
+          <header className="grid grid-flow-col">
             <h3>Destaques da Inteligência Artificial</h3>
-            <a href="#" className="xl:grid xl:grid-flow-col">
+            <a href="#" className="grid grid-flow-col">
               <strong>Ver tudo</strong>
               <span></span>
             </a>
           </header>
 
-          <div className="xl:grid xl:gap-8">
-            <article className="xl:grid xl:grid-flow-col xl:gap-4">
+          <div className="grid gap-8">
+            <article className="grid grid-flow-col gap-4">
               <div>
                 <span className="content-tag">Inteligência Artificial</span>
                 <h3 className="text-xl">
@@ -143,7 +143,7 @@ export const Main = () => {
                 <img src="../assets/images/Image 10.png" alt="" />
               </div>
             </article>
-            <article className="xl:grid xl:grid-flow-col xl:gap-4">
+            <article className="grid grid-flow-col gap-4">
               <div>
                 <span className="content-tag">Inteligência Artificial</span>
                 <h3 className="text-xl">
@@ -168,7 +168,7 @@ export const Main = () => {
                 <img src="../assets/images/Image 11.png" alt="" />
               </div>
             </article>
-            <article className="xl:grid xl:grid-flow-col xl:gap-4">
+            <article className="grid grid-flow-col gap-4">
               <div>
                 <span className="content-tag">Inteligência Artificial</span>
                 <h3 className="text-xl">
@@ -176,7 +176,7 @@ export const Main = () => {
                   popularidade, oferecendo suporte emocional e físico aos
                   usuários.
                 </h3>
-                <p className="text-sm-line-clamp-3">
+                <p className="text-sm- line-clamp-3">
                   A tecnologia não só avança, mas também busca tornar a vida
                   mais significativa para todas as gerações. No cenário atual,
                   os robôs sociais, projetados especialmente para oferecer apoio
@@ -193,7 +193,7 @@ export const Main = () => {
                 <img src="../assets/images/Image 12.png" alt="" />
               </div>
             </article>
-            <article className="xl:grid xl:grid-flow-col xl:gap-4">
+            <article className="grid grid-flow-col gap-4">
               <div>
                 <span className="content-tag">Inteligência Artificial</span>
                 <h3 className="text-xl">
@@ -229,16 +229,16 @@ export const Main = () => {
           </div>
 
           <section id="more">
-            <header className="xl:grid xl:grid-flow-col">
+            <header className="grid grid-flow-col">
               <h3>Viu isso aqui?</h3>
-              <a href="#" className="xl:grid xl:grid-flow-col">
+              <a href="#" className="grid grid-flow-col">
                 <strong>Ver tudo</strong>
                 <span></span>
               </a>
             </header>
 
-            <div className="xl:grid xl:gap-8">
-              <article className="xl:grid xl:grid-flow-col xl:gap-4">
+            <div className="grid gap-8">
+              <article className="grid grid-flow-col gap-4">
                 <div>
                   <img src="../assets/images/Image 14.png" alt="" />
                 </div>
@@ -251,7 +251,7 @@ export const Main = () => {
                   </h3>
                 </div>
               </article>
-              <article className="xl:grid xl:grid-flow-col xl:gap-4">
+              <article className="grid grid-flow-col gap-4">
                 <div>
                   <img src="../assets/images/Image 15.png" alt="" />
                 </div>
@@ -264,7 +264,7 @@ export const Main = () => {
                   </h3>
                 </div>
               </article>
-              <article className="xl:grid xl:grid-flow-col xl:gap-4">
+              <article className="grid grid-flow-col gap-4">
                 <div>
                   <img src="../assets/images/Image 16.png" alt="" />
                 </div>
@@ -277,7 +277,7 @@ export const Main = () => {
                   </h3>
                 </div>
               </article>
-              <article className="xl:grid xl:grid-flow-col xl:gap-4">
+              <article className="grid grid-flow-col gap-4">
                 <div>
                   <img src="../assets/images/Image 17.png" alt="" />
                 </div>
@@ -290,7 +290,7 @@ export const Main = () => {
                   </h3>
                 </div>
               </article>
-              <article className="xl:grid xl:grid-flow-col xl:gap-4">
+              <article className="grid grid-flow-col gap-4">
                 <div>
                   <img src="../assets/images/Image 18.png" alt="" />
                 </div>
