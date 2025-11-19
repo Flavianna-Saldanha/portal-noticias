@@ -27,7 +27,7 @@ export const Menu = () => {
 
         <div>
           <img
-            src="/assets/Logo.png"
+            src="/assets/logo.png"
             alt="Portal de Notícias logo"
             className="w-52 lg:w-auto"
           />
